@@ -12,9 +12,26 @@ package GrupoJavaFood;
 public class BurguerKing extends Franquicia{
 
     public static String COMIDA = "Hamburgueras Americanas";
+    private boolean esSocial;
 
     public BurguerKing(String n){
         super(n,COMIDA);
+        esSocial = false;
     }
+    
+    public void setEsSocial(boolean activar){
+        esSocial = activar;
+    }
+    
+    public boolean getEsSocial(){
+        return esSocial;
+    }
+    
+    @Override
+    public double calcularTotalFinal(double st){
+        ganancia += st;
+        return st;
+    }
+    
 
 }
