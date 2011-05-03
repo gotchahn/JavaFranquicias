@@ -53,6 +53,14 @@ public class BarFriday extends Franquicia{
         ganancia += monto + st;
         return monto + st;
     }
+
+    @Override
+    public void Imprimir(){
+        super.Imprimir();
+        System.out.println("Inicio de Happy Hour " +
+                this.hhInit.toString() + " Hasta " +
+                this.hhFinish.toString() );
+    }
     
 }
 

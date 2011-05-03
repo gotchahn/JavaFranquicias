@@ -54,9 +54,9 @@ public class Franquicia {
      * Imprimi el detalle basico de la Franquicia
      */
     public void Imprimir(){
-        System.out.print("El nombre de la franquicia es: " +
+        System.out.println("El nombre de la franquicia es: " +
                 nombre + " Inaugurado en " +
-                inaugurado.toString() + "tipo de comida: " +
+                inaugurado.toString() + " tipo de comida: " +
                 tipoComida);
     }
 

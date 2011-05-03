@@ -32,6 +32,12 @@ public class BurguerKing extends Franquicia{
         ganancia += st;
         return st;
     }
+
+    @Override
+    public void Imprimir(){
+        System.out.println("Soy un BK en " + nombre +
+                (getEsSocial() ? " soy social" : " No soy social"));
+    }
     
 
 }
